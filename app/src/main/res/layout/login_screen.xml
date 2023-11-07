@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/uit" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sign_in_button"
+        android:id="@+id/sign_in_button_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -67,7 +67,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -83,7 +83,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tendangnhapInput"
+            android:id="@+id/usrInputLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="40"
@@ -103,7 +103,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -119,12 +119,24 @@
         app:startIconTint="#009688">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordInput"
+            android:id="@+id/pwdInputlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:singleLine="true"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <WebView
+        android:id="@+id/login_webview"
+        android:layout_width="103dp"
+        android:layout_height="323dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

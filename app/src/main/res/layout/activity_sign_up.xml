@@ -19,7 +19,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -56,7 +56,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -86,15 +86,34 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/uit" />
-
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sign_up_button"
+        android:id="@+id/sign_up_button_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -102,14 +121,14 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/custom_button"
         android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
         app:boxCornerRadiusBottomEnd="30dp"
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        android:textAllCaps="false"
-        android:textColor="#FFFF"
         app:boxStrokeWidthFocused="3dp"
-        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/back_button" />
@@ -142,7 +161,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -158,7 +177,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tendangnhapInput"
+            android:id="@+id/usrInputLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="40"
@@ -178,7 +197,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
-        app:boxStrokeColor="@color/uitblue"
+        app:boxStrokeColor="@color/white"
         app:boxStrokeWidthFocused="3dp"
         app:counterEnabled="true"
         app:counterMaxLength="40"
@@ -194,12 +213,21 @@
         app:startIconTint="#009688">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordInput"
+            android:id="@+id/pwdInputlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:singleLine="true"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <WebView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/sign_up_webview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

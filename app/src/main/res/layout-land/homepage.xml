@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/uit" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sign_in_button"
+        android:id="@+id/sign_in_button_login"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
@@ -81,6 +81,6 @@
         app:layout_constraintBottom_toTopOf="@+id/sign_in_google_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toEndOf="@+id/sign_in_button" />
+        app:layout_constraintStart_toEndOf="@+id/sign_in_button_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
